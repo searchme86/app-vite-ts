@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* common */
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "removeComments": true,
+    "useDefineForClassFields": true,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "@script/*": ["src/scripts/"],
+      "@assets/*": ["src/assets/"],
+      "@images/*": ["src/assets/images/"]
+    },
+    "typeRoots": ["./src/types/*"],
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["./src/**/*.ts", "./src/main.ts"],
+  "exclude": ["node_modules"]
+}
